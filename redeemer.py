@@ -30,7 +30,7 @@ POST_CONFIRM_WAIT  = 3    # Wait after clicking Confirm
 BETWEEN_PLAYERS    = 2    # Pause between players
 
 
-def build_driver(headless: bool = True) -> webdriver.Chrome:
+def build_driver(headless: bool = False) -> webdriver.Chrome:
     # Tell Selenium to store its driver cache inside the project folder
     os.environ.setdefault("SE_CACHE_PATH", os.path.join(os.path.dirname(__file__), ".selenium_cache"))
     
